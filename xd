@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="script.js" type="script/javascript"></script>
+    <title>CALCULADORA</title>
+</head>
+<body>    
+    <div id="calculadora">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3">
+            <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+            </tr>
+        </div>
+        <div id="caja4">
+            <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+        </div>
+        <div id="caja5">
+            <table id="table5">
+                <tr>
+                    <td><button class="b5"></button></td>
+                    <td><button class="bnumber">9</button></td>
+                    <td><button class="b5"></button></td>
+                    <td><button class="b5"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="bnumber">7</button></td>
+                    <td><button class="bnumber">8</button></td>
+                    <td><button class="bnumber">9</button></td>
+                    <td><button class="b5"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="bnumber">4</button></td>
+                    <td><button class="bnumber">5</button></td>
+                    <td><button class="bnumber">6</button></td>
+                    <td><button class="b5"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="bnumber">1</button></td>
+                    <td><button class="bnumber">2</button></td>
+                    <td><button class="bnumber">3</button></td>
+                    <td><button class="b5"></button></td>
+                </tr>                
+                <tr>
+                    <td><button class="b5"></button></td>
+                    <td><button class="bnumber">0</button></td>
+                    <td><button class="b5"></button></td>
+                    <td><button class="b5"></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
