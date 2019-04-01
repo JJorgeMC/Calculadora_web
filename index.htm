@@ -6,15 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://font s.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="script.js" type="script/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <link rel="shortcuit icon" href="images/calculator.ico">
     <title>CALCULADORA</title>
 </head>
-<body>    
+<body onload="init();">    
     <div id="calculadora">
-        <div id="caja1"></div>
-        <div id="caja2"></div>
+        <div id="caja1">
+            <i class="fas fa-bars" ></i>
+            <label for="" id="lb1">ESTÁNDAR</label>
+            <i class="fas fa-undo" style="float: right;"></i>
+        </div>
+        <div id="caja2">
+            <table id="table2">
+                <tr>
+                    <td id="tdresup"><span id="resup"></span></td> 
+                </tr>
+                <tr>
+                    <td id="tdresdown"><span id="resdown"></span></td> 
+                </tr>
+            </table>
+        </div>
         <div id="caja3">
             <table id="table3">
                 <tr>
@@ -40,37 +52,38 @@
         <div id="caja5">
             <table id="table5">
                 <tr>
-                    <td class="td5"><button class="b5">CE</button></td>
-                    <td class="td5"><button class="b5">C</button></td>
-                    <td class="td5"><button class="b5"><i class="fas fa-backspace"></i></button></td>
-                    <td class="td5"><button class="b5"><i class="fas fa-divide"></i></button></td>
+                    <td class="td5"><button id="resetall" class="b5">CE</button></td>
+                    <td class="td5"><button id="reset" class="b5">C</button></td>
+                    <td class="td5"><button id="backspace" class="b5"><i class="fas fa-backspace"></i></button></td>
+                    <td class="td5"><button id="divi" class="b5"><i class="fas fa-divide"></i></button></td>
                 </tr>
                 <tr>
-                    <td class="td5"><button class="bnumber">7</button></td>
-                    <td class="td5"><button class="bnumber">8</button></td>
-                    <td class="td5"><button class="bnumber">9</button></td>
-                    <td class="td5"><button class="b5">X</button></td>
+                    <td class="td5"><button id="n7" class="bnumber">7</button></td>
+                    <td class="td5"><button id="n8" class="bnumber">8</button></td>
+                    <td class="td5"><button id="nueve" class="bnumber">9</button></td>
+                    <td class="td5"><button id="opx" class="b5">X</button></td>
                 </tr>
                 <tr>
-                    <td class="td5"><button class="bnumber">4</button></td>
-                    <td class="td5"><button class="bnumber">5</button></td>
-                    <td class="td5"><button class="bnumber">6</button></td>
-                    <td class="td5"><button class="b5">-</button></td>
+                    <td class="td5"><button id="n4" class="bnumber">4</button></td>
+                    <td class="td5"><button id="n5" class="bnumber">5</button></td>
+                    <td class="td5"><button id="n6" class="bnumber">6</button></td>
+                    <td class="td5"><button id="opm" class="b5">-</button></td>
                 </tr>
                 <tr>
-                    <td class="td5"><button class="bnumber">1</button></td>
-                    <td class="td5"><button class="bnumber">2</button></td>
-                    <td class="td5"><button class="bnumber">3</button></td>
-                    <td class="td5"><button class="b5">+</button></td>
+                    <td class="td5"><button id="n1" class="bnumber">1</button></td>
+                    <td class="td5"><button id="n2" class="bnumber">2</button></td>
+                    <td class="td5"><button id="n3" class="bnumber">3</button></td>
+                    <td class="td5"><button id="opM" class="b5">+</button></td>
                 </tr>                
                 <tr>
                     <td class="td5"><button class="b5" style="text-decoration: underline">+</button></td>
-                    <td class="td5"><button class="bnumber">0</button></td>
-                    <td class="td5"><button class="bnumber">.</button></td>
-                    <td class="td5"><button class="b5">=</button></td>
+                    <td class="td5"><button id="n0" class="bnumber">0</button></td>
+                    <td class="td5"><button id="cq" class="bnumber">.</button></td>
+                    <td class="td5"><button id="igual" class="b5">=</button></td>
                 </tr>
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
